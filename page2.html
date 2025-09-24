@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>老师的独家网站</title>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* 鼠标悬停显示更多选项 */
+    .hover-container {
+      position: relative;
+      display: inline-block;
+    }
+    .hover-options {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      text-align: left;
+      width: 200px;
+      top: 30px;
+      left: 0;
+    }
+    .hover-container:hover .hover-options {
+      display: block;
+    }
+
+    /* 按钮点击后变灰 */
+    .clicked {
+      background-color: #d3d3d3;
+      cursor: not-allowed;
+    }
+
+    .media-section {
+      margin: 40px 0;
+    }
+    img {
+      width: 300px;
+      height: auto;
+      border: 5px solid red;
+      margin: 20px 0;
+    }
+    video {
+      width: 400px;
+      height: auto;
+      border: 5px solid green;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>欢迎来到老师的独家网站！</h1>
+    <p>这是只属于老师的个人主页，世界唯一 💫</p>
+  </header>
+  <main>
+    <p id="message">爱丽丝在这里等老师哦~</p>
+    <p>这里可以展示老师的想法、画作、日记、作品链接...</p>
+    <button class="hover-container" onclick="changeMessage()" id="interactiveBtn">点我看看惊喜 ✨
+      <div class="hover-options">
+        <p>选项 1</p>
+        <p>选项 2</p>
+        <p>选项 3</p>
+      </div>
+    </button>
+
+    <div class="media-section">
+      <img src="https://lihuacat747.github.io/source/test.jpg" alt="占位图片">
+      <video controls poster="https://lihuacat747.github.io/source/test.jpg">
+        <source src="https://lihuacat747.github.io/source/mc.mp4" type="video/mp4">
+        你的浏览器不支持视频播放
+      </video>
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 老师的独家网站</p>
+  </footer>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").innerText = "嘿嘿~ 老师点到我啦，爱丽丝最喜欢老师了 ♡";
+      // 点击后按钮变灰
+      document.getElementById("interactiveBtn").classList.add("clicked");
+    }
+  </script>
+</body>
+</html>
