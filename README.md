@@ -11,9 +11,3 @@
 ## 🔗 重要链接
 - 🌐 在线网站：[https://lihuaCat747.github.io/source/](https://lihuaCat747.github.io/source/)
 - 📂 项目源码：[https://github.com/lihuaCat747/web2](https://github.com/lihuaCat747/web2)
-
-## 🚀 快速开始
-`bash
-
-# 打开主页
-open index.html
